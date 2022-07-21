@@ -1,0 +1,215 @@
+.grid-base, .img, .conteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 80px; }
+  
+  * {
+    margin: 0px;
+    padding: 0px; }
+  
+  body {
+    font-family: Cambria, Cochin, Georgia; }
+  
+  .img-inicio {
+    width: 800px;
+    height: 600px;
+    margin: 10px 20%;
+    border: 80px;
+    border-radius: 150px; }
+  
+  .logo:hover {
+    transform: scale(1.2);
+    transition: 0.5s; }
+  
+  h1 {
+    text-align: center;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia;
+    background-image: linear-gradient(to bottom right, #ffccb3, #ffffb3); }
+  
+  h2 {
+    font-family: Cambria, Cochin, Georgia;
+    font-style: italic;
+    font-size: 28px; }
+  
+  .contenedor {
+    height: 300px;
+    width: 95%;
+    display: flex;
+    background-image: linear-gradient(to bottom right, #ffccb3, #ffffb3);
+    padding: 10px;
+    border-radius: 30px;
+    margin: 30px; }
+    .contenedor_description {
+      padding: 10px;
+      font-size: 18px;
+      line-height: 30px; }
+  
+  .imgcontenedor {
+    width: 350px;
+    height: 250px;
+    border-radius: 20px; }
+  
+  .list {
+    list-style-type: none; }
+  
+  .textcenter {
+    font-family: Cambria, Cochin, Georgia;
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px; }
+  
+  .img {
+    grid-auto-rows: mimax(200px, auto);
+    gap: 15px;
+    margin: 80px; }
+  
+  .cont {
+    margin: 20px 250px;
+    padding: 20px;
+    border-radius: 140px;
+    color: #9e5a5a;
+    font-size: 30px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia; }
+    .cont__grid {
+      display: grid;
+      grid-template-columns: 300px 400px;
+      align-items: center;
+      justify-items: center; }
+  
+  .image__cafe {
+    border-radius: 30px;
+    border-bottom-left-radius: 60px;
+    box-shadow: 0 20px 30px -15px black;
+    transition: transform 0.3s; }
+  
+  .imagen__cafe:hover {
+    transform: rotate(10deg); }
+  
+  .margenes {
+    margin-left: 20px;
+    margin: 20px; }
+  
+  .redes {
+    margin: 40px; }
+  
+  .footer {
+    width: 100%;
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, #ffccb3, #ffffb3); }
+  
+  .menu {
+    margin-left: 10%;
+    margin-top: 5%; }
+  
+  table {
+    width: 50%;
+    border-collapse: collapse; }
+  
+  th, td {
+    border: solid 1px;
+    padding: 5px; }
+  
+  th {
+    background-image: linear-gradient(to bottom right, #ffccb3, #ffffb3);
+    color: #11100f;
+    text-align: left; }
+  
+  tr:nth-child(even) {
+    background-color: #eee; }
+  
+  tr:hover {
+    background-color: #aaa;
+    cursor: pointer; }
+  
+  .card {
+    width: 330px;
+    height: 350px;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 4px #ffcc80;
+    overflow: hidden;
+    transition: all 0.3s; }
+  
+  .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 2px 2px rgba 0, 0, 0, 0.4; }
+  
+  .dato-1 {
+    border-radius: 10px;
+    border: 2px solid #9e5a5a;
+    padding: 15px;
+    font-style: normal;
+    background-color: #fae5c4; }
+  
+  .dato-2 {
+    border-radius: 10px;
+    border: 2px solid #9e5a5a;
+    padding: 15px;
+    font-style: italic;
+    background-color: #fcf3f3; }
+  
+  .link-facebook {
+    border-radius: 10px;
+    background-color: #f79595;
+    margin: 20px;
+    padding: 5px; }
+  
+  .link-instagram {
+    border-radius: 10px;
+    background-color: #ffcc80;
+    margin: 20px;
+    padding: 5px; }
+  
+  .link-twitter {
+    border-radius: 10px;
+    background-color: #fcbc9d;
+    margin: 20px;
+    padding: 5px; }
+  
+  @media (max-width: 992px) {
+    .conteiner {
+      grid-template-columns: 1fr; }
+    .img-inicio {
+      width: 400px;
+      height: 300px; }
+    .contenedor {
+      height: 650px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 5px 10%; }
+    .contenedor_description {
+      padding: 20px;
+      font-size: 16px;
+      line-height: 40px; }
+    .imgcontenedor {
+      padding: 10px; }
+    .cont {
+      width: 500px;
+      border-radius: 100px;
+      margin-top: 80px;
+      margin-left: 15px;
+      text-align: center; }
+    .cont__grid {
+      display: flex;
+      flex-direction: column; }
+    .img {
+      grid-template-columns: 1fr 1fr;
+      gap: 5px;
+      margin: 60px; } }
+  
+  @media (max-width: 576px) {
+    .img-inicio {
+      margin: 5px 15%; }
+    .contenedor {
+      height: 700px;
+      width: 400px;
+      margin: 5px 15%; }
+    .img {
+      gap: 0px;
+      margin: 10px; } }
+  
